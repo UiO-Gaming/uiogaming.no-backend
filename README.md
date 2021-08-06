@@ -1,9 +1,25 @@
-# Sanity Clean Content Studio
+# uiogaming.no backend
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+Dette er CMS, conent management system, til [uiogaming.no](https://uiogaming.no). Backenden kjører på Sanity og er det vi bruker for å legge til blogginnlegg, arrangementer, og styremedlemmer på nettsiden.
 
-Now you can do the following things:
+For å få noe som helst nytte av denne så bør du kjøre frontenden. Den kan du finner [her](https://github.com/UiO-Gaming/uiogaming.no)
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+## Oppsett
+
+1. Installer avhengigheter
+
+```bash
+yarn install
+```
+
+2. Kjør applikasjonen
+
+```bash
+yarn start
+```
+
+## Deployment
+
+Man kan velge å hoste selv eller få sanity til å gjøre det for deg. De har en ganske bra tilbud uten at man må betale noe. Se
+
+[Les mer her](https://www.sanity.io/docs/deployment)
