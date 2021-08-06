@@ -6,6 +6,8 @@ For å få noe som helst nytte av denne så bør du kjøre frontenden. Den kan d
 
 ## Oppsett
 
+### Manuelt
+
 1. Installer avhengigheter
 
 ```bash
@@ -17,6 +19,10 @@ yarn install
 ```bash
 yarn start
 ```
+
+### Docker
+
+Docker støttes ikke for øyeblikket, men det er planer om å få til dette i fremtiden.
 
 ## Deployment
 
