@@ -43,7 +43,7 @@ export default {
       name: "description",
       title: "Beskrivelse",
       type: "string",
-      validation: (Rule) => Rule.required().max(100),
+      validation: (Rule) => Rule.required().max(120),
     },
   ],
 
