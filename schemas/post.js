@@ -47,7 +47,7 @@ export default {
       description:
         "Dette er teksten som vil vises på forsiden som forhåndsvisning",
       type: "string",
-      validation: (Rule) => Rule.required().max(120),
+      validation: (Rule) => Rule.required().max(150),
     },
   ],
 
