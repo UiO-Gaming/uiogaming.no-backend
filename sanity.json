@@ -15,7 +15,8 @@
     "@sanity/desk-tool",
     "order-documents",
     "dark-mode",
-    "nyancat-spinner"
+    "nyancat-spinner",
+    "media-library"
   ],
   "env": {
     "development": {
