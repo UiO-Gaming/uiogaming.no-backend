@@ -8572,6 +8572,11 @@ sanity-plugin-dark-mode@^0.0.32:
   resolved "https://registry.npmjs.org/sanity-plugin-dark-mode/-/sanity-plugin-dark-mode-0.0.32.tgz#706547578e61d5d8a614620164f6356f1909232b"
   integrity sha512-X/UyHRZEmjPizVpgEsJZMcCYsYabhEb8lBC4qRUODN+pkMl+Dbod5J0BN+DBaySaW1cetdJRjW44UCVnwKs+GQ==
 
+sanity-plugin-nyancat-spinner@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/sanity-plugin-nyancat-spinner/-/sanity-plugin-nyancat-spinner-1.0.0.tgz#b1a5b513d9efa18750c7e2ba40b151ba8c4f5ab5"
+  integrity sha1-saW1E9nvoYdQx+K6QLFRuoxPWrU=
+
 sanity-plugin-order-documents@^0.0.18:
   version "0.0.18"
   resolved "https://registry.npmjs.org/sanity-plugin-order-documents/-/sanity-plugin-order-documents-0.0.18.tgz#454038c5dda914ac235ed289d6676f2dc49a14a0"
