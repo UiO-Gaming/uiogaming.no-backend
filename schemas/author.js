@@ -18,9 +18,6 @@ export default {
       name: "image",
       title: "Bilde",
       type: "image",
-      options: {
-        hotspot: true,
-      },
     },
     {
       name: "role",
