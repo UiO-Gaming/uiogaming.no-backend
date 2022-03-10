@@ -34,7 +34,7 @@ export default {
     {
       name: "bio",
       title: "Bio",
-      type: "string",
+      type: "text",
       validation: (Rule) => Rule.required().max(280),
     },
     {
