@@ -26,6 +26,6 @@ Docker støttes ikke for øyeblikket, men det er planer om å få til dette i fr
 
 ## Deployment
 
-Man kan velge å hoste selv eller få sanity til å gjøre det for deg. De har en ganske bra tilbud uten at man må betale noe. Se
+Man kan velge å hoste selv eller få sanity til å gjøre det for deg. De har en ganske bra tilbud uten at man må betale noe.
 
 [Les mer her](https://www.sanity.io/docs/deployment)
