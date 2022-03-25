@@ -2,7 +2,7 @@
 
 Dette er CMS, content management system, til [uiogaming.no](https://uiogaming.no). Det kjører på Sanity og er det vi bruker for å legge til blogginnlegg, arrangementer, og styremedlemmer på nettsiden.
 
-For å få noe som helst nytte av denne så bør du kjøre frontenden. Den kan du finner [her](https://github.com/UiO-Gaming/uiogaming.no)
+For å få noe som helst nytte av denne bør du kjøre frontenden. Den kan du finner [her](https://github.com/UiO-Gaming/uiogaming.no)
 
 ## Oppsett
 
