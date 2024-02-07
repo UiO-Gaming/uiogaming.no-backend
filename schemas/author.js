@@ -29,7 +29,7 @@ export default {
       name: "email",
       title: "E-post",
       type: "string",
-      validation: (Rule) => Rule.required().max(50),
+      validation: (Rule) => Rule.max(50),
     },
     {
       name: "bio",
