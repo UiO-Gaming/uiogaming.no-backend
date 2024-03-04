@@ -26,8 +26,8 @@ export default {
       validation: (Rule) => Rule.required().max(50),
     },
     {
-      name: "email",
-      title: "E-post",
+      name: "contactInfo",
+      title: "Kontaktinfo (f. eks: Discordbrukernavn eller E-post)",
       type: "string",
       validation: (Rule) => Rule.max(50),
     },
