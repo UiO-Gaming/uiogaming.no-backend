@@ -1,3 +1,8 @@
+import {
+  orderRankField,
+  orderRankOrdering,
+} from "@sanity/orderable-document-list";
+
 export default {
   name: "author",
   title: "Person",
@@ -37,12 +42,7 @@ export default {
       type: "text",
       validation: (Rule) => Rule.required().max(280),
     },
-    {
-      name: "order",
-      title: "Rekkefølge",
-      type: "number",
-      hidden: true,
-    },
+    orderRankField({ type: "author" }),
   ],
   preview: {
     select: {
