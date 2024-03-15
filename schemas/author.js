@@ -27,8 +27,7 @@ export default {
     {
       name: "role",
       title: "Stilling",
-      type: "string",
-      validation: (Rule) => Rule.required().max(50),
+      type: "localeString",
     },
     {
       name: "contactInfo",
@@ -39,14 +38,14 @@ export default {
     {
       name: "bio",
       title: "Bio",
-      type: "text",
-      validation: (Rule) => Rule.required().max(280),
+      type: "localeString",
     },
     orderRankField({ type: "author" }),
   ],
   preview: {
     select: {
       title: "name",
+      subtitle: "title.$baseLanguage.id",
       media: "image",
     },
   },
