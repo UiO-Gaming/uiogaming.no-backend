@@ -11,13 +11,13 @@ For å få noe som helst nytte av denne bør du kjøre frontenden. Den kan du fi
 1. Installer avhengigheter
 
 ```bash
-yarn install
+npm install
 ```
 
 2. Kjør applikasjonen
 
 ```bash
-yarn start
+npm start
 ```
 
 ### Docker
