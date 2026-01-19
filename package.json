@@ -5,13 +5,12 @@
   "description": "UiO Gaming Website Backend",
   "author": "Leander Furumo <leanderfurumoprotonmail.com>",
   "dependencies": {
-    "@sanity/components": "^2.14.0",
-    "@sanity/orderable-document-list": "^1.2.2",
+    "@sanity/orderable-document-list": "^1.4.2",
     "prop-types": "^15.8.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sanity": "^3.63.0",
-    "sanity-plugin-media": "^2.3.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sanity": "^5.4.0",
+    "sanity-plugin-media": "^4.1.1",
     "styled-components": "^6.1.15"
   },
   "devDependencies": {},
