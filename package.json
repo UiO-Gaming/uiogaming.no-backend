@@ -9,7 +9,7 @@
     "prop-types": "^15.8.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "sanity": "^5.4.0",
+    "sanity": "^5.31.1",
     "sanity-plugin-media": "^4.1.1",
     "styled-components": "^6.1.15"
   },
