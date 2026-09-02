@@ -1,1 +1,0 @@
-import{u as e}from"./dist-DDhzSbNW.js";function t(){return e().projectId}export{t};
