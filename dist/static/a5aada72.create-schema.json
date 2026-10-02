@@ -1,0 +1,503 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "custom"
+              }
+            ]
+          }
+        ],
+        "name": "name",
+        "type": "slug"
+      }
+    ],
+    "name": "media.tag",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "weak": true,
+        "to": [
+          {
+            "type": "media.folder"
+          }
+        ],
+        "name": "parent",
+        "type": "reference"
+      }
+    ],
+    "name": "media.folder",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 50
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Tittel"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "custom"
+              }
+            ]
+          }
+        ],
+        "description": "Lenke til innlegget. Sørg for at tittelen er unik og trykk på generate. Hvis ikke, endre denne til noe unikt",
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "to": [
+          {
+            "type": "author"
+          }
+        ],
+        "name": "author",
+        "type": "reference",
+        "title": "Person"
+      },
+      {
+        "name": "mainImage",
+        "type": "image",
+        "title": "Forsidebilde"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "body",
+        "type": "blockContent",
+        "title": "Brødtekst"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 150
+              }
+            ]
+          }
+        ],
+        "description": "Dette er teksten som vil vises på forsiden som forhåndsvisning",
+        "name": "excerpt",
+        "type": "string",
+        "title": "Sammendrag"
+      }
+    ],
+    "name": "post",
+    "type": "document",
+    "title": "Blogginnlegg"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 50
+              }
+            ]
+          }
+        ],
+        "name": "name",
+        "type": "string",
+        "title": "Navn"
+      },
+      {
+        "name": "boardMember",
+        "type": "boolean",
+        "title": "Styremedlem?"
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "title": "Bilde"
+      },
+      {
+        "fieldsets": [
+          {
+            "name": "translations",
+            "options": {
+              "collapsible": true
+            }
+          }
+        ],
+        "name": "role",
+        "type": "localeString",
+        "title": "Stilling"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 50
+              }
+            ]
+          }
+        ],
+        "name": "contactInfo",
+        "type": "string",
+        "title": "Kontaktinfo (f. eks: Discordbrukernavn eller E-post)"
+      },
+      {
+        "fieldsets": [
+          {
+            "name": "translations",
+            "options": {
+              "collapsible": true
+            }
+          }
+        ],
+        "name": "bio",
+        "type": "localeString"
+      },
+      {
+        "readOnly": true,
+        "hidden": true,
+        "name": "orderRank",
+        "type": "string"
+      }
+    ],
+    "name": "author",
+    "type": "document",
+    "title": "Person"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 50
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Navn"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "Lenke til arrangementet. Sørg for at navnet er unikt og trykk på generate. Hvis ikke, endre denne til noe unikt",
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "options": {
+          "dateFormat": "YYYY-MM-DD",
+          "timeFormat": "HH:mm",
+          "timeStep": 15,
+          "calendarTodayLabel": "I dag"
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "date",
+        "type": "datetime",
+        "title": "Tidspunkt"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 50
+              }
+            ]
+          }
+        ],
+        "name": "location",
+        "type": "string",
+        "title": "Sted"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "description",
+        "type": "text",
+        "title": "Beskrivelse"
+      }
+    ],
+    "name": "event",
+    "type": "document",
+    "title": "Arrangement"
+  },
+  {
+    "of": [
+      {
+        "lists": [
+          {
+            "value": "bullet",
+            "title": "Bullet"
+          }
+        ],
+        "marks": {
+          "annotations": [
+            {
+              "fields": [
+                {
+                  "validation": [
+                    {
+                      "level": "error",
+                      "rules": [
+                        {
+                          "flag": "uri",
+                          "constraint": {
+                            "options": {
+                              "scheme": [
+                                "/^http$/",
+                                "/^https$/"
+                              ],
+                              "allowRelative": false,
+                              "relativeOnly": false,
+                              "allowCredentials": false
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "href",
+                  "type": "url",
+                  "title": "URL"
+                }
+              ],
+              "name": "link",
+              "type": "object",
+              "title": "URL"
+            }
+          ],
+          "decorators": [
+            {
+              "value": "strong",
+              "title": "Strong"
+            },
+            {
+              "value": "em",
+              "title": "Emphasis"
+            }
+          ]
+        },
+        "of": [],
+        "styles": [
+          {
+            "value": "normal",
+            "title": "Normal"
+          },
+          {
+            "value": "h1",
+            "title": "H1"
+          },
+          {
+            "value": "h2",
+            "title": "H2"
+          },
+          {
+            "value": "h3",
+            "title": "H3"
+          },
+          {
+            "value": "h4",
+            "title": "H4"
+          },
+          {
+            "value": "blockquote",
+            "title": "Quote"
+          }
+        ],
+        "type": "block"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "type": "image"
+      }
+    ],
+    "name": "blockContent",
+    "type": "array"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 200
+              }
+            ]
+          }
+        ],
+        "name": "no",
+        "type": "string",
+        "title": "Norsk"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 200
+              }
+            ]
+          }
+        ],
+        "name": "en",
+        "type": "string",
+        "title": "English",
+        "fieldset": "translations"
+      }
+    ],
+    "fieldsets": [
+      {
+        "name": "translations",
+        "options": {
+          "collapsible": true
+        }
+      }
+    ],
+    "name": "localeString",
+    "type": "object",
+    "title": "Localized string"
+  }
+]
