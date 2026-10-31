@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "UiO Gaming Website Backend",
-  "author": "Leander Furumo <leanderfurumoprotonmail.com>",
+  "author": "Leander Furumo <leander@furumo.eu>",
   "dependencies": {
     "@sanity/orderable-document-list": "^2.0.28",
     "react": "^19.3.1",
