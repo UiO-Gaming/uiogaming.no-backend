@@ -6,7 +6,6 @@
   "author": "Leander Furumo <leanderfurumoprotonmail.com>",
   "dependencies": {
     "@sanity/orderable-document-list": "^2.0.28",
-    "prop-types": "^15.8.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "sanity": "^6.21.0",
