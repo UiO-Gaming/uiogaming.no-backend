@@ -18,6 +18,11 @@
     "@vercel/frameworks": {
       "js-yaml": "^3.15.2",
       "smol-toml": "^1.9.1"
+    },
+    "minimatch": "^11.0.3",
+    "sanity-plugin-media": {
+      "zod": "^4.6.7",
+      "@hookform/resolvers": "^5.2.2"
     }
   },
   "scripts": {
