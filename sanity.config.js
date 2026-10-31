@@ -13,13 +13,12 @@ export default defineConfig({
   plugins: [
     structureTool({
       structure: (S, context) => {
-        console.log(S.documentTypeListItems());
         return S.list()
           .title("Innholdstyper")
           .items([
             orderableDocumentListDeskItem({
               type: "author",
-              title: "Rekkefølge på styemedlemmer",
+              title: "Rekkefølge på styremedlemmer",
               filter: "boardMember == true",
               createIntent: false,
               S,
