@@ -2,6 +2,7 @@ import {
   orderRankField,
   orderRankOrdering,
 } from "@sanity/orderable-document-list";
+import { baseLanguage } from "./localeStringType";
 
 export default {
   name: "author",
@@ -43,10 +44,11 @@ export default {
     },
     orderRankField({ type: "author" }),
   ],
+  orderings: [orderRankOrdering],
   preview: {
     select: {
       title: "name",
-      subtitle: "title.$baseLanguage.id",
+      subtitle: `role.${baseLanguage.id}`,
       media: "image",
     },
   },
