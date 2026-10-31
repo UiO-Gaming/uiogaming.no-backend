@@ -80,3 +80,6 @@ yalc.lock
 
 ## Documentation Report
 scripts/docs-report.md
+
+# Compiled Sanity Studio
+/dist
