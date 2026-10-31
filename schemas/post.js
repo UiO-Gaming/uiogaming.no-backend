@@ -31,6 +31,7 @@ export default {
       name: "mainImage",
       title: "Forsidebilde",
       type: "image",
+      options: { hotspot: true },
     },
     {
       name: "body",
